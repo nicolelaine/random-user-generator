@@ -5,7 +5,7 @@ const randomFolks = document.querySelector(".random-peeps");
 
 const getData = async function (numUsers) {
     console.log(`Fetching data for ${numUsers} users...`); // Debugging statement
-    const usersRequest = await fetch('https://randomuser.me/api?results=${numUsers}');
+    const usersRequest = await fetch(`https://randomuser.me/api?results=${numUsers}`);
        const data = await usersRequest.json();
        console.log(data);
 
